@@ -1,0 +1,40 @@
+#BigMax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BigMax .bigmax-main{
+    width: 250px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+
+}
+
+#BigMax .bigmax-main::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%) translateX(-50%) rotate(15deg);
+
+}
+
+
+#BigMax .bigmax-main::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: black;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%) translateX(50%) rotate(-15deg);
+
+}
